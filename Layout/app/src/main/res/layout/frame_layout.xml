@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <FrameLayout
+        android:background="#FF39C5BB"
+        android:layout_width="400dp"
+        android:layout_height="400dp"/>
+    <FrameLayout
+        android:foreground="@drawable/ic_launcher_background"
+        android:foregroundGravity="bottom|left"
+        android:background="#FF00FF00"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+</FrameLayout>

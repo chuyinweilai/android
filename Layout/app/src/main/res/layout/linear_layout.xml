@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/divider"
+    android:showDividers="middle"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="#FF0F00F0"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+    <LinearLayout
+        android:background="#FFff99cc"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+    <LinearLayout
+        android:background="#FF39C5BB"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+</LinearLayout>
