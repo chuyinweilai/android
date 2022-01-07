@@ -9,9 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Intent">
+        <activity android:name=".ThirdActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                // scheme:指定数据的协议部分
+                <data android:scheme="https" />
+                <data android:scheme="http" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".SecondActivity"
-            android:exported="false" />
+            android:exported="false">
+            <intent-filter>
+                // 定义该活动的名称:ACTION_START
+                <action android:name="com.example.intent.ACTION_START" />
+                // 用于精确指明，当前活动能够响应的Intent中，可能带有的category
+                // DEFAULTS为默认的categor,在调用startActivity()时，自动将该category添加到Intent中
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.example.intent.MY_CATEGORY" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".FirstActivity"
             android:label="@string/app_name">
